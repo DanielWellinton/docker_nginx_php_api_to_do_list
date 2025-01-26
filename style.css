@@ -68,8 +68,8 @@ li {
 }
 
 .pagination button {
-    background-color: #007bff; /* Azul */
-    color: white; /* Texto branco */
+    background-color: #007bff;
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -79,11 +79,11 @@ li {
 }
 
 .pagination button:hover {
-    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+    background-color: #0056b3;
 }
 
 .pagination button:disabled {
-    background-color: #b0c4de; /* Cinza-azulado para botões desabilitados */
+    background-color: #b0c4de;
     cursor: not-allowed;
 }
 
@@ -106,13 +106,13 @@ li button:hover {
     color: #333;
     font-size: 14px;
     z-index: 1000;
-    white-space: pre-line; /* Preserva as quebras de linha */
+    white-space: pre-line;
 }
 
 .popover::after {
     content: '';
     position: absolute;
-    bottom: 100%; /* Ponta apontando para o elemento */
+    bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
     border-width: 5px;

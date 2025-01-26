@@ -28,7 +28,7 @@
         const taskForm = document.getElementById('taskForm');
         const taskList = document.getElementById('taskList');
         let currentPage = 1;
-        const limit = 5; // Número de tarefas por página
+        const limit = 5;
         const pageInfo = document.getElementById('pageInfo');
         const prevPage = document.getElementById('prevPage');
         const nextPage = document.getElementById('nextPage');
@@ -68,8 +68,8 @@
             .then(response => response.json())
             .then(data => {
                 const { tasks, total, pages } = data;
-                taskList.innerHTML = ''; // Limpar a lista antes de recarregar
-                tasks.forEach(task => { // Corrigido: de data para tasks
+                taskList.innerHTML = '';
+                tasks.forEach(task => {
                     const li = document.createElement('li');
                     li.setAttribute('data-description', task.description);
                     li.innerHTML = `
